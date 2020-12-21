@@ -42,10 +42,10 @@ class SignInComponent extends React.Component {
             Sign In
           </Button>
           <br />
-          <a href="#">forget your password</a>
+          <a href="https://github.com/truph77">forget your password</a>
           <div className="tail">
             Not our member yet?
-            <a href="#"> Create Account!</a>
+            <a href="./create"> Create Account!</a>
           </div>
         </div>
       </CreateAccount>

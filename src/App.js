@@ -1,9 +1,8 @@
 import "./App.css";
-import LoginComponent from "./Components/Login";
+import LoginComponent from "./Components/Homepage";
 import CreateAccount from "./Components/CreateAccount";
 import SignIn from "./Components/SignIn";
-import Login from "./Components/Login";
-// import Routers from "./authed";
+import Homepage from "./Components/Homepage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
       <div className="App">
         <div className="App-header">
           <LoginComponent />
-          <Route path="/" exact component={Login} />
+          <Route path="/" exact component={Homepage} />
           <Route path="/create" component={CreateAccount} />
           <Route path="/sign-in" component={SignIn} />
         </div>

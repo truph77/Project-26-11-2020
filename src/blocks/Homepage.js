@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Login = styled.div`
+const Homepage = styled.div`
   .wrapper {
     position: absolute;
     top: 40%;
@@ -49,4 +49,4 @@ const Login = styled.div`
   }
 `;
 
-export default Login;
+export default Homepage;

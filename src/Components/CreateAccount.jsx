@@ -65,19 +65,14 @@ class CreateAccountComponent extends React.Component {
               <Input placeholder="Sponsor" />
             </Form.Item>
           </Form>
-          <Button
-            className="btn-sign-up"
-            type="primary"
-            block
-            // icon={<UserAddOutlined />}
-          >
+          <Button className="btn-sign-up" type="primary" block>
             Sign Up
           </Button>
           <br />
-          <a href="#">Term and Conditions </a>
+          <a href="https://github.com/truph77">Term and Conditions </a>
           <div className="tail-create-account">
             Already have an account?
-            <a href="#">Sign In</a>
+            <a href="./sign-in">Sign In</a>
           </div>
         </div>
       </CreateAccount>

@@ -1,10 +1,10 @@
 import React from "react";
-import Login from "../blocks/Login";
+import Homepage from "../blocks/Homepage";
 import { Button } from "antd";
 import { Link, useHistory } from "react-router-dom";
 import { PlusOutlined, UserAddOutlined } from "@ant-design/icons";
 
-const LoginComponent = () => {
+const HomepageComponent = () => {
   const history = useHistory();
   const showCreateAccount = () => {
     history.push({
@@ -18,7 +18,7 @@ const LoginComponent = () => {
     });
   };
   return (
-    <Login>
+    <Homepage>
       <div className="wrapper">
         <div className="outer-bag">
           <div className="logo">
@@ -45,8 +45,8 @@ const LoginComponent = () => {
           </div>
         </div>
       </div>
-    </Login>
+    </Homepage>
   );
 };
 
-export default LoginComponent;
+export default HomepageComponent;
