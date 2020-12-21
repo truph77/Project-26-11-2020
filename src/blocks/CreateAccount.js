@@ -33,9 +33,15 @@ const CreateAccount = styled.div`
     padding: 5px;
   }
 
+  .create-account .ant-input:focus {
+    outline: none;
+    border-bottom: 2px solid #139bdb;
+  }
+
+  ${"" /* 
   .ant-input:active {
     border-top: 0px solid !important;
-  }
+  } */}
 
   .btn-sign-up {
     background: #139bdb;

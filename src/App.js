@@ -12,9 +12,6 @@ function App() {
       <div className="App">
         <div className="App-header">
           <LoginComponent />
-          {/* <CreateAccount /> */}
-          {/* <SignIn /> */}
-          {/* <Routers /> */}
           <Route path="/" exact component={Login} />
           <Route path="/create" component={CreateAccount} />
           <Route path="/sign-in" component={SignIn} />
