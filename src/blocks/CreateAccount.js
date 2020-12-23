@@ -52,6 +52,7 @@ const CreateAccount = styled.div`
     margin-top: 5%;
     margin-bottom: 1%;
     color: white;
+    cursor: pointer;
   }
 
   a {

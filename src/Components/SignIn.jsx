@@ -16,8 +16,8 @@ const SignInComponent = () => {
       .then((res) => {
         console.log(res.data);
       })
-      .catch((res) => {
-        console.log(res);
+      .catch((err) => {
+        console.log(err.message);
       });
     console.log(user);
   };
