@@ -46,6 +46,7 @@ const Homepage = styled.div`
 
   .ant-btn {
     border: none;
+    cursor: pointer;
   }
 `;
 

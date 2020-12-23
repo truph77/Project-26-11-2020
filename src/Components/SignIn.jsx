@@ -4,13 +4,22 @@ import { Input, Form, Button } from "antd";
 import axios from "axios";
 
 const SignInComponent = () => {
-  const [form] = Form.useForm();
-  const [name, setName] = useState("");
+  const [user, setUser] = useState({ email: "", password: "" });
 
-  const createAccount = async () => {
-    try {
-      await form.validateFields();
-    } catch (error) {}
+  const handleChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const submitHandler = () => {
+    axios
+      .post(`http://localhost:1234/api/login`, user)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((res) => {
+        console.log(res);
+      });
+    console.log(user);
   };
 
   return (
@@ -23,23 +32,33 @@ const SignInComponent = () => {
         </div>
 
         <Form
-          form={form}
+          // onSubmit={submitHandler}
           name="normalSignIn"
           className="create-account"
           initialValues={{ remember: true }}
           // onFinish={onFinish}
         >
           <Form.Item
-            name="email"
             rules={[{ required: true, message: "Please input your Email!" }]}
           >
-            <Input placeholder="Email" />
+            <Input
+              name="email"
+              type="email"
+              placeholder="Email"
+              onChange={handleChange}
+              value={user.email}
+            />
           </Form.Item>
           <Form.Item
-            name="password"
             rules={[{ required: true, message: "Please input your Password!" }]}
           >
-            <Input placeholder="Password" />
+            <Input
+              name="password"
+              type="password"
+              placeholder="Password"
+              onChange={handleChange}
+              value={user.password}
+            />
           </Form.Item>
         </Form>
 
@@ -47,6 +66,7 @@ const SignInComponent = () => {
           className="btn-sign-up"
           type="primary"
           block
+          onClick={() => submitHandler()}
           // icon={<UserAddOutlined />}
         >
           Sign In
