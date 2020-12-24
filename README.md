@@ -4,10 +4,12 @@
 
 #### In this demo using [Login api](https://github.com/truph77/Project-26-11-2020-backend) written by me 🤘
 
+---
+
 <h3 align="center">No pain no gain 👍</h3>
 
 ---
->_Please contact me for more details:_
+>_Please contact me for more details:_ <br>
 >Email: <Phamtrung2422k@gmail.com>
 
 ---
